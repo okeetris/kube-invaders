@@ -68,10 +68,7 @@ KUBEINVADERS_SECRET=$(oc get secret -n kubeinvaders --field-selector=type==kuber
 
 oc process -f openshift/KubeInvaders.yaml -p ROUTE_HOST=$ROUTE_HOST -p TARGET_NAMESPACE=$TARGET_NAMESPACE -p KUBEINVADERS_SECRET=$KUBEINVADERS_SECRET | oc create -f -
 ```
-
-### How the configuration of KubeInvaders DeploymentConfig should be (remember to use your TARGET_NAMESPACE and ROUTE_HOST)
-
-![Alt Text](https://github.com/lucky-sideburn/KubeInvaders/blob/master/images/dcenv.png)
+You can change the namespace within the KubeInvaders pod enviroment variables on OpenShift once setup. e.g jmeter,KubeInvaders
 
 ### Install KubeInvaders on Kubernetes
 
