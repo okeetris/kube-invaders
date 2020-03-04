@@ -4,7 +4,7 @@ oc create clusterrole kubeinvaders-role --verb=watch,get,delete,list --resource=
 
 oc get namespaces
 ## You can define multiple namespaces ex: TARGET_NAMESPACE=foobar,foobar2
-read -p 'Enter target namespaces from above: ' TARGET_NAMESPACE
+read -p 'Enter target namespaces from above ex: foobar,foobar2 : ' TARGET_NAMESPACE
 
 oc get routes
 # Choose route host for your kubeinvaders instance.

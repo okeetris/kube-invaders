@@ -47,7 +47,6 @@ helm install --set-string target_namespace="namespace1\,namespace2" --name kubei
 
 To Install KubeInvaders on your Openshift Cluster clone this repo and launch the following commands then provide the target namespace and cluster route path :
 
-
 ```bash
 chmod +x install.sh
 
