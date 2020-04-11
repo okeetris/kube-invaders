@@ -53,3 +53,7 @@ chmod +x install.sh
 ./install.sh
 ```
 You can change the namespace within the KubeInvaders pod enviroment variables on OpenShift once setup. e.g jmeter,KubeInvaders
+
+
+### Credits
+Based upon *luck-sidburn*'s work [here](https://github.com/lucky-sideburn/KubeInvaders)
